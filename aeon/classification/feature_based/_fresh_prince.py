@@ -79,8 +79,8 @@ class FreshPRINCEClassifier(BaseClassifier):
 
     _tags = {
         "X_inner_type": ["np-list", "numpy3D"],
-        "capability:multivariate": True,
         "capability:multithreading": True,
+        "capability:multivariate": True,
         "capability:train_estimate": True,
         "capability:unequal_length": True,
         "algorithm_type": "feature",
