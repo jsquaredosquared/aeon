@@ -249,6 +249,16 @@ class TSFresh(_TSFresh):
     >>> X_transform2 = ts_custom.fit_transform(X_train) # doctest: +SKIP
     """
 
+    _tags = {
+        "output_data_type": "Tabular",
+        "X_inner_type": ["np-list", "numpy3D"],
+        "capability:multivariate": True,
+        "capability:multithreading": True,
+        "capability:unequal_length": True,
+        "fit_is_empty": True,
+        "python_dependencies": "tsfresh",
+    }
+
     def __init__(
         self,
         default_fc_parameters="efficient",
